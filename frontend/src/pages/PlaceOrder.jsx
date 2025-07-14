@@ -6,7 +6,6 @@ import { ShopContext } from '../context/ShopContext'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-
 const PlaceOrder = () => {
   const [method, setMethod] = useState('cod');
   const { navigate, backendUrl, token, cartItems, setCartItems, getCartAmount, delivery_fee, products } = useContext(ShopContext);
